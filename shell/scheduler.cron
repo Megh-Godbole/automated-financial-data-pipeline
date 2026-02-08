@@ -1,0 +1,2 @@
+0 18 * * * /path/to/shell/run_pipeline.sh
+0 19 * * * /path/to/shell/backup_db.sh
