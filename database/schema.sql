@@ -3,8 +3,8 @@ USE TreasuryDB;
 
 CREATE TABLE IF NOT EXISTS ExchangeRates (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    currency_pair VARCHAR(10) NOT NULL,
-    rate DECIMAL(10,4) NOT NULL,
+    currency_pair VARCHAR(10),
+    rate DECIMAL(10,4),
     source VARCHAR(50),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
 );
